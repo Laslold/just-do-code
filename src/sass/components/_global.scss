@@ -1,11 +1,21 @@
+
 .container{
     max-width: 480px;
     margin: 0 auto;
     padding: 0 16px;
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width:768px){
         max-width:768px;
     }
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width:1280px){
         max-width:1280px;
     }
 }
+
+.section{
+    margin-bottom: 60px;
+    @media screen and (min-width:768px){
+    margin-bottom: 100px;
+    }
+}
+
+
