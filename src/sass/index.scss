@@ -1,7 +1,9 @@
-@import './common';
+
 // @import './example';
-@import "./base/base";
+
 @import "./components/global";
+@import './components/common';
+@import "./base/base";
 @import "./utils/utils";
 @import "./layout/layout";
 
