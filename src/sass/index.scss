@@ -1,11 +1,9 @@
 
-// @import './example';
-
-
+@import './utils/variables';
+@import "./utils/utils";
+@import "./base/base";
 @import './components/common';
 @import "./components/global";
-@import "./base/base";
-@import "./utils/utils";
 @import "./layout/layout";
 
 
