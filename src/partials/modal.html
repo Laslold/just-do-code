@@ -1,20 +1,26 @@
 <div class="backdrop">
     <div class="modal" id="modal-1">
-    <div class="modal__content">
-       <div>
+    <!-- <div class="modal__content"> -->
+        <button data-modal-close class="modal__btn">
+            <svg class="modal__icon">
+              <use href="./images/spite.svg#icon-btn"></use>
+            </svg></button>
+       <div class="modal__wrapper">
         <img src="./images/modal/desktop/desktop-christie@1x.jpeg" alt="bouquet of flowers" width="428">
-        <strong>Follow to our newsletter</strong>
+        
      
-        <div>
-              <p>Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
-            <form action="">
-                <label for="">Email</label>
-                <input type="email" name="" id="">
+        <div class="modal__content">
+            <strong class="modal__plea">Follow to our newsletter</strong>
+              <p class="modal__text">Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
+            <div>
+              <form class="modal__fild" action="">
+                <label for="mail">Email</label>
+                <input class="modal__input" type="email" name="mail" id="mail" placeholder="Your email">
             </form>
           
            
-            <button class="md__btn" type="button">Subscribe</button>
-        </div>
-    </div>
+            <button class="modal__form-btn" type="button">Subscribe</button>
+        </div></div>
+    <!-- </div> -->
     </div>
 </div></div>
