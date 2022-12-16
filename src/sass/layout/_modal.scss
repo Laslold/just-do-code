@@ -38,7 +38,9 @@
 
 .modal {
     position: relative;
-    width: 100vw;
+    width: 860px;
+    height: 528px;
+    display: flex;
     // height: 100vh;
     overflow-y: auto;
     left: 50%;
@@ -51,16 +53,17 @@
     transition: opacity 250ms ;
     opacity: 1;
     visibility: visible;
+    margin: 0;
+  padding: 0;
+    // @media screen and (min-width: $mobile) {
+    //   width: 450px;
+    //   height: 609px;
+    // }
   
-    @media screen and (min-width: $mobile) {
-      width: 450px;
-      height: 609px;
-    }
-  
-    @media screen and (min-width: $desktop) {
-      width: 528px;
-      height: 581px;
-    }
+    // @media screen and (min-width: $desktop) {
+    //   width: 528px;
+    //   height: 581px;
+    // }
   
     &__btn {
       display: flex;
