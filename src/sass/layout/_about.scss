@@ -1,0 +1,40 @@
+.about {
+    @extend .container;
+    &__title {
+        @extend .title;
+        margin-bottom: 32px;
+    }
+    &__description {
+        align-items: center;
+        @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+            
+        }
+    
+    &__text {
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        
+            color: #000000;
+            width: 288px;
+            margin-bottom: 16px;
+            @media screen and (min-width: $tablet){
+                width: 322px;
+                margin-bottom: 0;
+                margin-right: 54px;
+                
+            }
+
+    }
+    &__img {
+        width: 288px;
+        @media screen and (min-width: $tablet) {
+            width: 344px;
+        }
+        
+    }
+}
