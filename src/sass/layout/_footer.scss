@@ -1,0 +1,46 @@
+.footer {
+  background-color: $black-text-color;
+  color: $white-text-color;
+  font-family: Inter, sans-serif;
+  fill: $white-text-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+  }
+
+  &__logo {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 18px;
+  }
+
+  &__navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &__social-icon {
+    height: 23px;
+    fill: $white-text-color;
+  }
+}
