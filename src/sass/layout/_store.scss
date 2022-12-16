@@ -5,6 +5,9 @@
       justify-content: center;
       margin-bottom: 32px;
       margin-right: 0;
+      @media screen and (min-width:768px){
+      margin-bottom: 60px;
+      }
       
 }
 .store__item {
@@ -28,3 +31,25 @@
             opacity: 0.6;
 }
 
+.store__button{
+           display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 28px;
+            margin-right: auto;
+            margin-left: auto;
+            gap: 10px;
+            background: #E86F54;
+            border-radius: 38px;
+            border: transparent;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            width: 208px;
+            height: 44px;
+            @media screen and (min-width:768px){
+                  width: 280px;
+                  height: 64px;
+            }
+}
