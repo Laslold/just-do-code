@@ -1,35 +1,44 @@
 <div class="section">
     <div class="container">
+
         <a href="#" class="header__logo-link logo-link"> </a>
 
         <div class="header__mobile-icons">
-            <button class="header__phone"></button>
-            <button class="header__menu"></button>
+            <button class="header__phone">
+                <svg width="22" height="22">
+                    <use href="../images/sprite.svg#icon-call-us"></use>
+                </svg>
+            </button>
+            <button class="header__menu">
+                <svg>
+                    <use href="../images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
         
+        <div class="header__mobile-modal js-menu-container">
+            <button class="header-button__close js-close-menu" type="button">
+                <svg class="header-button__icon" width="25" height="25">
+                <use href="#"></use>
+                </svg>
+            </button>
+        
+            <ul class="header__mobile__nav">
+                <li class="mobile__nav-item">
+                <a href="#" class="mobile__nav-link active">Anemone</a>
+                </li>
+                <li class="mobile__nav-item">
+                <a href="#" class="mobile__nav-link">Store</a>
+                </li>
+                <li class="mobile__nav-item">
+                <a href="#" class="mobile__nav-link">Delivery</a>
+                </li>
+                <li class="mobile__nav-item">
+                <a href="#" class="mobile__nav-link">Blog</a>
+                </li>
+            </ul>
+        
+        </div>
     </div>
 </div>
 
-<div class="mobile-modal js-menu-container">
-    <button class="header-button__close js-close-menu" type="button">
-        <svg class="header-button__icon" width="25" height="25">
-        <use href="#"></use>
-        </svg>
-    </button>
-
-    <ul class="header__mobile__nav">
-        <li class="mobile__nav-item">
-        <a href="#" class="mobile__nav-link active">Anemone</a>
-        </li>
-        <li class="mobile__nav-item">
-        <a href="#" class="mobile__nav-link">Store</a>
-        </li>
-        <li class="mobile__nav-item">
-        <a href="#" class="mobile__nav-link">Delivery</a>
-        </li>
-        <li class="mobile__nav-item">
-        <a href="#" class="mobile__nav-link">Blog</a>
-        </li>
-    </ul>
-
-</div>
