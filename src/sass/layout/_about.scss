@@ -1,9 +1,9 @@
 .about {
-  @extend .container;
+
   &__title {
     @extend .title;
     margin-bottom: 32px;
-    text-transform: uppercase;
+    
   }
   &__description {
     align-items: center;
