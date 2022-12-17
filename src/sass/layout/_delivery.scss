@@ -1,0 +1,59 @@
+.delivery {
+  &__title {
+    @extend .title;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 288px;
+  }
+
+  &__item {
+    display: flex;
+    width: 288px;
+    height: 40px;
+    align-items: center;
+  }
+
+  &__ellipse {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    /*     
+        padding: 5px 5px; */
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+
+  &__accent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+
+    color: #000000;
+    width: 232px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+//   &__img {
+//     width: 320px;
+//     @media screen and (min-width: $tablet) {
+//       width: 768px;
+//     }
+//     @media screen and (min-width: $desktop) {
+//       width: 1280px;
+//     }
+//   }
+}
