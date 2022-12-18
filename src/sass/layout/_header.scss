@@ -37,13 +37,6 @@
       display: flex;
       align-items: center;
     }
-    @media screen and (min-width: $desktop) {
-      display: block;
-      display: flex;
-      align-items: center;
-    }
-    
-  
   }
 
   .header__mobile-nav{
@@ -216,17 +209,21 @@
     }
 
     .button-icon__cross{
-      display: none;
+      opacity:0;
+      visibility: hidden;
     }
-
-    .header-button__open.is-open .button-icon__cross{
-      display: block;
-    }
-
-    .header__mobile-nav.is-open{
+    
+  
+    .header__mobile-nav.is-open {
       opacity: 1;
       visibility:visible;
     }
+
+    .header__mobile-nav.is-open .button-icon__cross{
+      opacity:1;
+      visibility: visible;
+    }
+
   
   
   
