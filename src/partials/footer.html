@@ -17,18 +17,20 @@
   <footer class="footer">
     <div class="container footer__items">
       <div class="footer__logo">
-        <svg class="">
+        <svg class="footer__logo-icon">
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </div>
       <div class="footer__navigation">
         <h2 class="footer__heading">Navigation</h2>
-        <ul class="footer__navigation-list">
-          <li><a class="footer__link" href="http://">Anemone</a></li>
-          <li><a class="footer__link" href="http://">About us</a></li>
-          <li><a class="footer__link" href="http://">Store</a></li>
-          <li><a class="footer__link" href="http://">Delivery</a></li>
-        </ul>
+        <nav>
+          <ul class="footer__list">
+            <li><a class="footer__link" href="./index.html">Anemone</a></li>
+            <li><a class="footer__link" href="#about-us">About us</a></li>
+            <li><a class="footer__link" href="#store">Store</a></li>
+            <li><a class="footer__link" href="#delivery">Delivery</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="footer__opening">
         <h2 class="footer__heading">Opening times</h2>
@@ -38,25 +40,32 @@
       </div>
       <div class="footer__contacts">
         <h2 class="footer__heading">Contacts</h2>
-        <ul class="footer__navigation-list">
-          <li><a class="footer__link" href="tel:+380631234567">+38 063 123 45 67</a></li>
-          <li>
-            <a href="mailto:anemonestudio@example.com"
-              >anemonestudio@example.com</a
-            >
-          </li>
-          <li>
-            <a class="footer__link"
-              href="https://goo.gl/maps/QKrHFrEc54jKMPXg7"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Reitarska Street, 11 Kyiv, Ukraine</a
-            >
-          </li>
-        </ul>
+        <address>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link" href="tel:+380631234567"
+                >+38 063 123 45 67</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="mailto:anemonestudio@example.com"
+                >anemonestudio&#8203;@example.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="https://goo.gl/maps/QKrHFrEc54jKMPXg7"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Reitarska Street, 11 Kyiv, Ukraine</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
       <div class="footer__social">
-        <ul>
+        <ul class="footer__social-list">
           <li>
             <a
               href="https://www.facebook.com/"
@@ -66,8 +75,7 @@
               <svg class="footer__social-icon">
                 <use href="./images/sprite.svg#icon-facebook"></use>
               </svg>
-              </a
-            >
+            </a>
           </li>
           <li>
             <a
@@ -76,9 +84,8 @@
               rel="noopener noreferrer nofollow"
             >
               <svg class="footer__social-icon">
-                <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg></a
-            >
+                <use href="./images/sprite.svg#icon-instagram"></use></svg
+            ></a>
           </li>
         </ul>
       </div>
