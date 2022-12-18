@@ -1,16 +1,28 @@
 .hero{
-    padding-top: 110px;
     position: relative;
-    @media screen and (min-width: $tablet){
-        padding-top: 240px;
-    }
+    
+}
 
+.hero .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 113px 0 100px;
+    
+    @media screen and (min-width: $tablet){
+        padding-top:255px;
+    }
 }
 .hero__describe{
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 61px;
+    padding: 0 11px;
+    @media screen and (min-width: $tablet){
+        margin-bottom: 172px;
+    }
     @media screen and (min-width: $tablet){
         margin-bottom: 172px;
     }
@@ -21,20 +33,23 @@
     line-height: 1.2;
 
     color: $black-text-color;
-    margin-left: 11px;
     @media screen and (min-width:$tablet) {
         font-size: 24px;
-        margin-left: 11px;
+        padding-left: 49px;
     }
     @media screen and (min-width:$desktop) {
         font-size: 32px;
-        margin-left: 210px;
+        padding-left: 210px;
     }
 }
 .hero__btn{
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    @media screen and (min-width:$tablet) {
+        margin-right: unset;
+    }
     @media screen and (min-width:$desktop) {
         margin-right: 145px;
     }
