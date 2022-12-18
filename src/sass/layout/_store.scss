@@ -1,3 +1,21 @@
+.store{
+@media screen and (min-width:768px) {
+            padding: 0 24px;
+      }
+}
+.store-container__title{
+      margin-bottom: 32px;
+      text-transform: uppercase;
+      @media screen and (min-width:768px) {
+                  margin-bottom: 60px;
+            }
+            @media screen and (min-width:1280px) {
+                  margin-bottom: 80px;
+            }
+
+}
+
+
 .store__list{
       display: flex;
       flex-wrap: wrap;
@@ -7,21 +25,63 @@
       margin-right: 0;
       @media screen and (min-width:768px){
       margin-bottom: 60px;
+      gap: 32px;
       }
       
 }
 .store__item {
       width: calc((100% - 1 * 16px) / 2);
+      @media screen and (min-width:768px) {
+            width: calc((100% - 1 * 32px) / 2);
+            margin-bottom: 40px;
+            }
+      @media screen and (min-width:1280px) {
+             margin-bottom: 64px;
+            }
+
 }
+
 .store__title{
+      display: flex;
+      align-items: center;
       margin-bottom: 6px;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.25;
+            @media screen and (min-width:768px) {
+                  margin-bottom: 8px;
+                  font-size: 32px;
+                  line-height: 1.22;
+                  }
+             @media screen and (min-width:1280px) {
+                  margin-bottom: 4px;
+                              font-size: 36px;
+                  }
+                        
+}
+.store__title::after {
+      display: none;
+      @media screen and(min-width: 768px) {
+            content: '';
+                  flex-grow: 1;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: row;
+                  border: 1px solid #000000;
+                  height: 0;
+                  margin-left: 8px;
+      }
+      @media screen and (min-width:1280px){
+                  margin-left: 16px;
+      }
+
 }
 .store__img{
       width: 100%;
       margin-bottom: 12px;
+      @media screen and (min-width:768px) {
+                  margin-bottom: 16px;
+            }
 }
 .store__text{
       margin-bottom: 0;
@@ -29,7 +89,15 @@
             font-size: 12px;
             line-height: 1.25;
             opacity: 0.6;
-}
+            @media screen and (min-width:768px) {
+                  font-size: 24px;
+                  line-height: 1.2;
+            }
+            @media screen and (min-width:1280px) {
+                  font-size: 28px;
+                  line-height: 1.21;
+            }
+      }
 
 .store__button{
            display: flex;
@@ -51,5 +119,7 @@
             @media screen and (min-width:768px){
                   width: 280px;
                   height: 64px;
+                  font-size: 28px;
+                  line-height: 0.86;
             }
 }
