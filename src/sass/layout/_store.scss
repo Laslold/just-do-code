@@ -1,15 +1,15 @@
 .store{
-@media screen and (min-width:768px) {
+@media screen and (min-width: $tablet) {
             padding: 0 24px;
       }
 }
 .store-container__title{
       margin-bottom: 32px;
       text-transform: uppercase;
-      @media screen and (min-width:768px) {
+      @media screen and (min-width:$tablet) {
                   margin-bottom: 60px;
             }
-            @media screen and (min-width:1280px) {
+            @media screen and (min-width: $desktop) {
                   margin-bottom: 80px;
             }
 
@@ -23,7 +23,7 @@
       justify-content: center;
       margin-bottom: 32px;
       margin-right: 0;
-      @media screen and (min-width:768px){
+      @media screen and (min-width: $tablet){
       margin-bottom: 60px;
       gap: 32px;
       }
@@ -31,11 +31,11 @@
 }
 .store__item {
       width: calc((100% - 1 * 16px) / 2);
-      @media screen and (min-width:768px) {
+      @media screen and (min-width: $tablet) {
             width: calc((100% - 1 * 32px) / 2);
             margin-bottom: 40px;
             }
-      @media screen and (min-width:1280px) {
+      @media screen and (min-width: $desktop) {
              margin-bottom: 64px;
             }
 
@@ -48,12 +48,12 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 1.25;
-            @media screen and (min-width:768px) {
+            @media screen and (min-width: $tablet) {
                   margin-bottom: 8px;
                   font-size: 32px;
                   line-height: 1.22;
                   }
-             @media screen and (min-width:1280px) {
+             @media screen and (min-width:$desktop) {
                   margin-bottom: 4px;
                               font-size: 36px;
                   }
@@ -61,17 +61,17 @@
 }
 .store__title::after {
       display: none;
-      @media screen and(min-width: 768px) {
+      @media screen and(min-width: $tablet) {
             content: '';
                   flex-grow: 1;
                   display: flex;
                   align-items: center;
                   flex-direction: row;
-                  border: 1px solid #000000;
+                  border: 1px solid $black-text-color;
                   height: 0;
                   margin-left: 8px;
       }
-      @media screen and (min-width:1280px){
+      @media screen and (min-width:$desktop){
                   margin-left: 16px;
       }
 
@@ -79,7 +79,7 @@
 .store__img{
       width: 100%;
       margin-bottom: 12px;
-      @media screen and (min-width:768px) {
+      @media screen and (min-width: $tablet) {
                   margin-bottom: 16px;
             }
 }
@@ -89,11 +89,11 @@
             font-size: 12px;
             line-height: 1.25;
             opacity: 0.6;
-            @media screen and (min-width:768px) {
+            @media screen and (min-width: $tablet) {
                   font-size: 24px;
                   line-height: 1.2;
             }
-            @media screen and (min-width:1280px) {
+            @media screen and (min-width: $desktop) {
                   font-size: 28px;
                   line-height: 1.21;
             }
@@ -107,16 +107,16 @@
             margin-right: auto;
             margin-left: auto;
             gap: 10px;
-            background: #E86F54;
+            background: $default-color-btn;
             border-radius: 38px;
             border: transparent;
-            color: #FFFFFF;
+            color: $white-text-color;
             font-weight: 500;
             font-size: 20px;
             line-height: 1.2;
             width: 208px;
             height: 44px;
-            @media screen and (min-width:768px){
+            @media screen and (min-width: $tablet){
                   width: 280px;
                   height: 64px;
                   font-size: 28px;
