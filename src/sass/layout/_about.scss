@@ -9,6 +9,7 @@
     align-items: center;
     @media screen and (min-width: $tablet) {
       display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -37,11 +38,11 @@
     max-width: 100%;
     @media screen and (min-width: $tablet) {
       width: 344px;
-      margin-left: 54px;
+      
     }
     @media screen and (min-width: $desktop) {
       width: 632px;
-      margin-left: 90px;
+      
     }
   }
 }
