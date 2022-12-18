@@ -26,17 +26,17 @@
           <use href="./images/sprite.svg#icon-call-us"></use>
         </svg>
         </a>
-        <button class="header-button__open is-open" data-menu-button  aria-controls="menu" aria-expanded="false" type="button">
+        <button class="header-button__open is-open" js-data-modal-open  aria-controls="menu" aria-expanded="false" type="button">
           <svg class="header-button__icon" width="24" height="24">
             <use class="button-icon__menu" href="./images/sprite.svg#icon-burger"></use>
-            <use class="button-icon__cross" href="./images/sprite.svg#icon-cross"></use>
+            <use class="button-icon__cross"  js-data-modal-close href="./images/sprite.svg#icon-cross"></use>
           </svg>
         </button>
     </div>
     
 
       
-    <div class="header__mobile-nav" data-menu  id="menu"  >
+    <div class="header__mobile-nav" data-menu  id="menu" js-data-modal >
       <ul class="header__mobile-nav-lists">
         <li class="header__mobile-nav-item"><a href="#" class="header__nav-link">Anemone</a></li>
         <li class="header__mobile-nav-item"><a href="#" class="header__nav-link">About us</a></li>
