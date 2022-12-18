@@ -1,4 +1,4 @@
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal" id="modal-1">
     <button data-modal-close class="modal__btn">
       <svg class="modal__icon">
@@ -26,13 +26,13 @@
             ./images/modal/mobil/mobile-christie@1x.jpeg 1x,
             ./images/modal/mobil/mobile-christie@2x.jpeg 2x
           "
-          media="(min-width: 480px)"
         />
 
-        <img class="modal__thumb"
+        <img
+          class="modal__thumb"
           src="./images/modal/mobil/mobile-christie@1x.jpeg"
           alt="bouquet of flowers"
-         width="272"
+          width="272"
         />
       </picture>
 
@@ -58,18 +58,20 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="backdrop is-hidden" data-modal>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="backdrop is-hidden" js-data-modal>
   <div class="modalhero" id="modal-2">
-    <button data-modal-close class="modalhero__btn">
+    <button js-data-modal-close class="modalhero__btn">
       <svg class="modalhero__icon">
         <use href="./images/sprite.svg#icon-cross"></use>
       </svg>
     </button>
     <div class="modalhero__wrapper">
+      
       <form class="modalhero__form" action="URL">
+        <div class="contact">
         <strong class="modalhero__plea">Contact us</strong>
         <p class="modalhero__text">
           If you have any additional questions or you want to clarify something
@@ -95,7 +97,36 @@
             id="email"
             placeholder="Your email"
           />
-        </div>
+        </div></div>
+        <div class="aside">
+          <div class="aside__align">
+          <picture>
+            <source
+              srcset="
+                ./images/modal/tablet/desk-thank@1x.jpg 1x,
+                ./images/modal/tablet/desk-thank@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/modal/mobil/mobil-thank@1x.jpg 1x,
+                ./images/modal/mobil/mobil-thank@2x.jpg 2x
+              "
+            />
+            <img
+              class="modalhero__thumb"
+              src="./images/modal/mobil/mobil-thank@1x.jpg"
+              alt="Thank You"
+              width="188"
+            />
+          </picture>
+
+          <strong class="modalhero__plea">Thank you!</strong>
+          <p class="modalhero__text">
+            We have received your contact details and will reach you soon.
+          </p>
+        </div></div>
         <div class="modalhero__inner">
           <button class="form-button" type="submit">Send</button>
         </div>

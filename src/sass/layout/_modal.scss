@@ -255,13 +255,10 @@
 }
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 .modalhero {
   position: relative;
-
   display: flex;
   overflow-y: auto;
-
   width: 87vw;
   left: 50%;
   top: 50%;
@@ -284,6 +281,7 @@
   @media screen and (min-width: $tablet) {
     width: 480px;
     height: 510px;
+    padding: 48px 32px;
   }
 
   &__btn {
@@ -297,6 +295,7 @@
     background-color: transparent;
     cursor: pointer;
     transition: color 250ms;
+    z-index: 33;
     @media screen and (min-width: $tablet) {
       top: 24px;
       right: 24px;
@@ -306,7 +305,6 @@
   &__icon {
     width: 18px;
     height: 18px;
-
     list-style: none;
     fill: currentColor;
     @media screen and (min-width: $tablet) {
@@ -316,6 +314,11 @@
   }
   &__wrapper {
     width: 100%;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  
   }
   &__form {
     position: relative;
@@ -323,62 +326,56 @@
     flex-direction: column;
     font-weight: 500;
     font-size: 10px;
-
     line-height: 1.21;
     color: #5c5c5c;
     @media screen and (min-width: $tablet) {
       font-size: 14px;
-      margin-top: 32px;
     }
   }
 
   &__plea {
-    // margin-top: 48px;
-
     padding: 0;
+    margin-bottom: 14px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 14px;
     color: $black-text-color;
     @media screen and (min-width: $tablet) {
-        font-weight: 600;
-    font-size: 32px;
-    line-height: 1.21;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1.21;
+      margin-bottom: 24px;
     }
   }
   &__text {
-    //  margin-top: 18px;
-    margin-bottom: 18px;
-    // margin-top: 24px;
-    // margin-bottom: 8px;
-    // width: 240px;
     width: auto;
+    margin-bottom: 18px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.25;
-
     color: #5c5c5c;
-  
+
     @media screen and (min-width: $tablet) {
-  font-weight: 500;
-    font-size: 16px;
+      font-weight: 500;
+      font-size: 16px;
       width: 416px;
-   
-  }
+      margin-bottom: 32px;
+    }
   }
 
   &__fild {
-    // position: relative;
-    // display: flex;
-    // flex-direction: column;
     margin-bottom: 14px;
-    // width: 416px;
     &::placeholder {
       font-weight: 500;
       font-size: 12px;
       line-height: 1.25;
       color: rgba(0, 0, 0, 0.4);
+    }
+    @media screen and (min-width: $tablet) {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
     }
   }
   &__label {
@@ -386,27 +383,20 @@
     font-weight: 500;
     font-size: 10px;
     line-height: 1.2;
-
-   
     color: #5c5c5c;
     @media screen and (min-width: $tablet) {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.13;
-  }
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.13;
+    }
   }
   &__input {
     width: 100%;
-    // width: 70vw;
-    // width: 240px;
     height: 35px;
-    // width: 416px;-
-    // height: 49px;-
     margin-top: 8px;
     padding-left: 12px;
     border: 1px solid #d7d7d7;
     border-radius: 4px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
@@ -417,14 +407,13 @@
       outline: none;
     }
     @media screen and (min-width: $tablet) {
-     width: 416px;
-    height: 49px;
+      width: 416px;
+      height: 49px;
     }
     &::placeholder {
       font-weight: 500;
       font-size: 12px;
       line-height: 1.25;
-
       color: rgba(0, 0, 0, 0.4);
       @media screen and (min-width: $tablet) {
         font-size: 14px;
@@ -432,10 +421,21 @@
       }
     }
   }
+  &__thumb {
+    width: 100vw;
+    @media screen and (min-width: $tablet) {
+      width: 367px;
+    }
+  }
   &__inner {
     margin-top: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 14px;
+    }
+  
   }
 }
+
 
 .form-button {
   display: inline-block;
@@ -446,7 +446,6 @@
   line-height: 1.21;
   letter-spacing: 0.06em;
   text-align: center;
-
   border-radius: 8px;
   border-color: transparent;
   color: $white-text-color;
@@ -467,10 +466,23 @@
     min-width: 240px;
   }
   @media screen and (min-width: $tablet) {
-    margin-top: 28px;
     min-width: 416px;
     height: 50px;
     font-size: 18px;
     line-height: 1.22;
+  }
+}
+// ------------------------------------
+.contact{
+ display: none;
+}
+.aside{
+  display: block;
+
+  &__align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
