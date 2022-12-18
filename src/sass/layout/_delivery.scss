@@ -2,39 +2,74 @@
   &__title {
     @extend .title;
     text-transform: uppercase;
+    padding-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 60px;
+      
+    }
+        @media screen and (min-width: $desktop) {
+          padding-bottom: 80px;
+        }
   }
 
   &__list {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 14px;
-    width: 288px;
+    padding-bottom: 26px;
+    @media screen and (min-width: $tablet){
+      padding-bottom: 40px;
+      gap: 20px;
+    }
+        @media screen and (min-width: $desktop) {
+          padding-bottom: 60px;
+          gap: 32px;
+        }
+
+    
   }
 
   &__item {
+   width: 100%;
     display: flex;
     width: 288px;
-    height: 40px;
+    // height: 40px;
     align-items: center;
+    @media screen and (min-width: $tablet) {
+      width: 667px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 1088px;
+      margin: 0 72px;
+     
+    }
   }
 
   &__ellipse {
     position: relative;
+    width: 100%;
     width: 40px;
     height: 40px;
-    /*     
-        padding: 5px 5px; */
+  padding: 5px 5px;
     color: white;
     border: 1px solid #000000;
     border-radius: 50%;
+    @media screen and (min-width: $tablet) {
+      width: 64px;
+      height: 64px;
+    }
   }
 
   &__accent {
+    
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: red;
+    color: $black-text-color;
+   
   }
 
   &__text {
@@ -42,18 +77,34 @@
     font-size: 14px;
     line-height: 1.2;
 
-    color: #000000;
+    color: $black-text-color;
     width: 232px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 0 8px;
+   
+    @media screen and (min-width: $tablet) {
+      font-weight: 500;
+        font-size: 24px;
+        line-height: calc(29/24);
+        color: $black-text-color;
+        width: 677px;
+      margin-left: 20px;
+      margin-right: 43px;
+    }
+        @media screen and (min-width: $desktop) {
+          margin-left: 56px;
+          margin-right: 0;
+        }
+        
+        
   }
-//   &__img {
-//     width: 320px;
-//     @media screen and (min-width: $tablet) {
-//       width: 768px;
-//     }
-//     @media screen and (min-width: $desktop) {
-//       width: 1280px;
-//     }
-//   }
+  &__img {
+    width: 100%;
+    // width: 320px;
+    // @media screen and (min-width: $tablet) {
+    //   width: 768px;
+    // }
+    // @media screen and (min-width: $desktop) {
+    //   width: 1280px;
+    // }
+  }
 }
