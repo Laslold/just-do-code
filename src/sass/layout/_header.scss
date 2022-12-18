@@ -58,6 +58,7 @@
     text-align: center;
     opacity: 0;
     visibility:hidden;
+    z-index: 0;
     @media screen and (min-width: $tablet) {
       display: none;
     }
@@ -223,19 +224,21 @@
     }
 
     .button-icon__cross{
+
       display: none;
     }
 
     .header__mobile-nav.is-open .button-icon__cross{
       display: block;
+      z-index: 10;
     }
 
     .header__mobile-nav.is-open{
       opacity: 1;
       visibility:visible;
     }
-    
-    
+  
+  
   
   
   ////////////////// Header__modal
