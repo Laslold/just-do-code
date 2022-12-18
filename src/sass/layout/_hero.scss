@@ -1,11 +1,19 @@
 .hero{
-    padding-top: 174px;
+    padding-top: 110px;
     position: relative;
+    @media screen and (min-width: $tablet){
+        padding-top: 240px;
+    }
+
 }
 .hero__describe{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 61px;
+    @media screen and (min-width: $tablet){
+        margin-bottom: 172px;
+    }
 }
 .hero__text{
     font-weight: 400;
@@ -37,6 +45,7 @@
     @media screen and (min-width: $tablet){
         width: 145px;
         height: 150px;
+
     }
 }
 
@@ -51,11 +60,16 @@
         font-size: 120px;
         line-height: 1.2;
     }
+    @media screen and (min-width: $desktop){
+        font-size: 160px;
+        line-height: 1.2;
+    }
+
 }
 
 .hero__img{
     position: absolute;
-    top:14px;
+    top:0;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
