@@ -37,11 +37,7 @@
       display: flex;
       align-items: center;
     }
-    @media screen and (min-width: $desktop) {
-      display: block;
-      display: flex;
-      align-items: center;
-    }
+    
     
   
   }
@@ -215,18 +211,11 @@
       }
     }
 
-    .button-icon__cross{
-      display: none;
-    }
+    
+    
+  
+   
 
-    .header-button__open.is-open .button-icon__cross{
-      display: block;
-    }
-
-    .header__mobile-nav.is-open{
-      opacity: 1;
-      visibility:visible;
-    }
   
   
   
