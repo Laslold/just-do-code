@@ -1,3 +1,7 @@
+body {
+  counter-reset: heading;
+  /* Инициируем счетчик */
+}
 .delivery {
   &__title {
     @extend .title;
@@ -5,11 +9,10 @@
     padding-bottom: 32px;
     @media screen and (min-width: $tablet) {
       padding-bottom: 60px;
-      
     }
-        @media screen and (min-width: $desktop) {
-          padding-bottom: 80px;
-        }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 80px;
+    }
   }
 
   &__list {
@@ -18,23 +21,20 @@
     flex-direction: column;
     gap: 14px;
     padding-bottom: 26px;
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $tablet) {
       padding-bottom: 40px;
       gap: 20px;
     }
-        @media screen and (min-width: $desktop) {
-          padding-bottom: 60px;
-          gap: 32px;
-        }
-
-    
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 60px;
+      gap: 32px;
+    }
   }
 
   &__item {
-   width: 100%;
+    width: 100%;
     display: flex;
     width: 288px;
-    // height: 40px;
     align-items: center;
     @media screen and (min-width: $tablet) {
       width: 667px;
@@ -42,35 +42,54 @@
     @media screen and (min-width: $desktop) {
       width: 1088px;
       margin: 0 72px;
-     
+    }
+    &:before {
+      counter-increment: heading;
+      /* Указываем идентификатор счетчика */
+      content: ' ' counter(heading) ' ';
+      /* Выводим текст перед содержимым тега <p> */
+      position: relative;
+      width: 40px;
+      height: 40px;
+      padding: 5px 5px;
+      border: 1px solid #000000;
+      border-radius: 50%;
+      @media screen and (min-width: $tablet) {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    &:content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
-  &__ellipse {
-    position: relative;
-    width: 100%;
-    width: 40px;
-    height: 40px;
-  padding: 5px 5px;
-    color: white;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    @media screen and (min-width: $tablet) {
-      width: 64px;
-      height: 64px;
-    }
-  }
+  // &__ellipse {
+  //   position: relative;
+  //   width: 100%;
+  //   width: 40px;
+  //   height: 40px;
+  //   padding: 5px 5px;
+  //   color: white;
+  //   border: 1px solid #000000;
+  //   border-radius: 50%;
+  //   @media screen and (min-width: $tablet) {
+  //     width: 64px;
+  //     height: 64px;
 
-  &__accent {
-    
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $black-text-color;
-   
-  }
+  //     }
+  //   }
+
+  // &__accent {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  // }
 
   &__text {
     font-weight: 500;
@@ -80,22 +99,20 @@
     color: $black-text-color;
     width: 232px;
     margin: 0 8px;
-   
+
     @media screen and (min-width: $tablet) {
       font-weight: 500;
-        font-size: 24px;
-        line-height: calc(29/24);
-        color: $black-text-color;
-        width: 583px;
+      font-size: 24px;
+      line-height: calc(29 / 24);
+      color: $black-text-color;
+      width: 583px;
       margin-left: 20px;
       margin-right: auto;
     }
-        @media screen and (min-width: $desktop) {
-          margin-left: 56px;
-          margin-right: 0;
-        }
-        
-        
+    @media screen and (min-width: $desktop) {
+      margin-left: 56px;
+      margin-right: 0;
+    }
   }
   &__img {
     width: 100%;
