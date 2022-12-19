@@ -54,7 +54,8 @@
     text-align: center;
     opacity: 0;
     visibility:hidden;
-    z-index: 1;
+    z-index: 10;
+    pointer-events: none;
     @media screen and (min-width: $tablet) {
       display: none;
     }
@@ -117,83 +118,7 @@
       height: 28px;
     }
   }
-
-  .mobile__nav{
-        margin-bottom: 302px;
-        
-    }
-    
-    .mobile__nav-link{
-        font-family: inherit;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 47px;
-        letter-spacing: 0.02em;
-        padding-bottom: 35px;
-        color: #212121;
-        &.active{
-            color: #2196F3;
-        }
-    }
   
-    .mobile__nav-item:not(:last-child){
-        margin-bottom: 35px;
-    }
-  
-    
-  
-    .mobile__address-link{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.02em;
-        color: #757575;
-        display: block;
-        margin-bottom: 32px;
-        &.active{
-            color: $hover-color-btn;
-        }
-        
-    }
-    .mobile__social{
-        display: flex;
-        gap: 10px;
-        margin-top: 32px;
-        display: inline-flex;
-    }
-  
-    .mobile__social-item{
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-        padding: 0 5px 0 0;
-        &:last-child{
-            border-right:0;
-        }
-    }
-    .mobile__social-link{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height, or 122% */
-        letter-spacing: 0.02em;
-  
-        color: #2196F3;
-    }
-  
-    .mobile__menu-button{
-        display: inline-flex;
-        margin: 0;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        position: absolute;
-        top: 20px;
-        right:22px;
-    
-    }
     
     .header-container{
       display: flex;
@@ -214,18 +139,24 @@
     
     
   
-    .header__mobile-nav.is-open {
-      opacity: 1;
-      visibility:visible;
-      
-    }
-    .header__mobile-nav {
-      opacity: 0;
-      visibility:hidden;
-    }
+.header__mobile-nav.is-open {
+  opacity: 1;
+  visibility:visible;
+  pointer-events: auto;
+}
 
+.header__mobile-close{
+  position: absolute;
+  top: 16px;
+  right:16px;
+  border:none;
+  background-color:transparent;
+}
+
+.header__mobile-close-img{
   
-
+  fill:#fff;
+}
   
   
   
