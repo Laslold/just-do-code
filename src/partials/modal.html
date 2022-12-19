@@ -1,0 +1,136 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal" id="modal-1">
+    <button data-modal-close class="modal__btn">
+      <svg class="modal__icon">
+        <use href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="modal__wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/modal/desktop/desktop-christie@1x.jpeg 1x,
+            ./images/modal/desktop/desktop-christie@2x.jpeg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/modal/tablet/tablet-christie@1x.jpeg 1x,
+            ./images/modal/tablet/tablet-christie@2x.jpeg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/modal/mobil/mobile-christie@1x.jpeg 1x,
+            ./images/modal/mobil/mobile-christie@2x.jpeg 2x
+          "
+        />
+
+        <img
+          class="modal__thumb"
+          src="./images/modal/mobil/mobile-christie@1x.jpeg"
+          alt="bouquet of flowers"
+          width="272"
+        />
+      </picture>
+
+      <div class="modal__content">
+        <strong class="modal__plea">Follow to our newsletter</strong>
+        <p class="modal__text">
+          Be the first to get exclusive offers and the latest news on our
+          product directly in your box.
+        </p>
+        <div class="modal__inner">
+          <form class="modal__fild" action="URL">
+            <label class="modal_mail" for="mail">Email</label>
+            <input
+              class="modal__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Your email"
+            />
+          </form>
+          <button class="modal__form-btn" type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="backdrop is-hidden" js-data-modal>
+  <div class="modalhero" id="modal-2">
+    <button js-data-modal-close class="modalhero__btn">
+      <svg class="modalhero__icon">
+        <use href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="modalhero__wrapper">
+      
+      <form class="modalhero__form" action="URL">
+        <div class="contact">
+        <strong class="modalhero__plea">Contact us</strong>
+        <p class="modalhero__text">
+          If you have any additional questions or you want to clarify something
+          before you make an order please fill in your contact details. We will
+          call you back.
+        </p>
+        <div class="modalhero__fild">
+          <label class="modalhero__label" for="name">Name</label>
+          <input
+            class="modalhero__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+          />
+        </div>
+        <div class="modalhero__fild">
+          <label class="modalhero__label" for="email">Email</label>
+          <input
+            class="modalhero__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+          />
+        </div></div>
+        <div class="aside">
+          <div class="aside__align">
+          <picture>
+            <source
+              srcset="
+                ./images/modal/tablet/desk-thank@1x.jpg 1x,
+                ./images/modal/tablet/desk-thank@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/modal/mobil/mobil-thank@1x.jpg 1x,
+                ./images/modal/mobil/mobil-thank@2x.jpg 2x
+              "
+            />
+            <img
+              class="modalhero__thumb"
+              src="./images/modal/mobil/mobil-thank@1x.jpg"
+              alt="Thank You"
+              width="188"
+            />
+          </picture>
+
+          <strong class="modalhero__plea">Thank you!</strong>
+          <p class="modalhero__text">
+            We have received your contact details and will reach you soon.
+          </p>
+        </div></div>
+        <div class="modalhero__inner">
+          <button class="form-button" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
