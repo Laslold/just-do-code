@@ -35,6 +35,7 @@
 .hero__btn{
     border:none;
     background-color: transparent;
+    cursor: pointer;
 }
 .hero__btn-img{
     @media screen and (min-width: $tablet){
