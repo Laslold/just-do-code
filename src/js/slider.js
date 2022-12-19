@@ -18,9 +18,14 @@ $(document).ready(function () {
     {
       breakpoint: 767.98,
       settings: {
-        slidesToShow: 1
-      }
-    }
+        slidesToShow: 3
+          }
+      
+        },{
+        breakpoint: 479.98,
+       settings: {
+        slidesToShow: 3
+      }}
   ]
   });
 });
