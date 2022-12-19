@@ -1,95 +1,69 @@
 .hero{
     position: relative;
-    
+    padding: 44px 0 100px;
 }
 
-.hero .container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 113px 0 100px;
-    
-    @media screen and (min-width: $tablet){
-        padding-top:255px;
-    }
-}
 .hero__describe{
-    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 61px;
-    padding: 0 11px;
-    @media screen and (min-width: $tablet){
-        margin-bottom: 166px;
-    }
-    @media screen and (min-width: $tablet){
-        margin-bottom: 130px;
-    }
 }
 .hero__text{
+    font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
+    width: 64px;
 
     color: $black-text-color;
-    @media screen and (min-width:$tablet) {
+    margin-left: 11px;
+    @media screen and (min-width: $tablet){
         font-size: 24px;
-        padding-left: 49px;
+        margin-left: 49px;
+        width: 76px;
+
     }
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop){
         font-size: 32px;
-        padding-left: 210px;
+        margin-left: 210px;
+        width: 101px;
     }
-}
-.hero__btn{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
-    @media screen and (min-width:$tablet) {
-        margin-right: unset;
-    }
-    @media screen and (min-width:$desktop) {
-        margin-right: 145px;
-    }
-    
 }
 
+
+.hero__btn{
+    border:none;
+    background-color: transparent;
+}
 .hero__btn-img{
     @media screen and (min-width: $tablet){
         width: 145px;
         height: 150px;
-
+    }
+    @media screen and (min-width: $desktop){
+        width: 166px;
+        height: 166px;
+        margin-right: 145px
     }
 }
 
+
 .hero__title{
-    font-weight: 400;
+    font-family: inherit;
+    font-style: normal;
     font-size: 52px;
     line-height: 1.2;
     text-align: center;
-
+    font-weight: 400;
     color: $black-text-color;
+    margin-top: -27px;
     @media screen and (min-width: $tablet){
         font-size: 120px;
-        line-height: 1.2;
+        margin-top: -59px;
     }
     @media screen and (min-width: $desktop){
         font-size: 160px;
-        line-height: 1.2;
+        margin-top: -105px;
     }
 
-}
-
-.hero__img{
-    position: absolute;
-    top:0;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    z-index: -1;
 }

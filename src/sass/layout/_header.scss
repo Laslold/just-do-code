@@ -6,7 +6,7 @@
   
 .header {
   position: relative;
-  padding: 16px 0 44px;
+  padding: 16px 0 0;
   @media screen and (min-width: $tablet){
     padding: 24px 0 38px;
   }
@@ -217,11 +217,14 @@
     .header__mobile-nav.is-open {
       opacity: 1;
       visibility:visible;
+      
+    }
+    .header__mobile-nav {
+      opacity: 0;
+      visibility:hidden;
     }
 
-    .header__mobile-nav.is-open .button-icon__cross{
-      display: block;
-    }
+  
 
   
   
