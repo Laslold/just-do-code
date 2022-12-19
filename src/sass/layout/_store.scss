@@ -1,125 +1,128 @@
-.store{
-@media screen and (min-width: $tablet) {
-            padding: 0 24px;
-      }
-}
-.store-container__title{
-      margin-bottom: 32px;
-      text-transform: uppercase;
-      @media screen and (min-width:$tablet) {
-                  margin-bottom: 60px;
-            }
-            @media screen and (min-width: $desktop) {
-                  margin-bottom: 80px;
-            }
-
+.store-container__title {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 80px;
+  }
 }
 
+.store {
+  @media screen and (min-width: $tablet) {
+    padding: 0 24px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-right: 0;
 
-.store__list{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      justify-content: center;
-      margin-bottom: 32px;
-      margin-right: 0;
-      @media screen and (min-width: $tablet){
+    @media screen and (min-width: $tablet) {
       margin-bottom: 60px;
       gap: 32px;
-      }
-      
-}
-.store__item {
-      width: calc((100% - 1 * 16px) / 2);
-      @media screen and (min-width: $tablet) {
-            width: calc((100% - 1 * 32px) / 2);
-            margin-bottom: 40px;
-            }
-      @media screen and (min-width: $desktop) {
-             margin-bottom: 64px;
-            }
+    }
+  }
+  &__item {
+    width: calc((100% - 1 * 16px) / 2);
 
-}
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 1 * 32px) / 2);
+      margin-bottom: 40px;
+    }
 
-.store__title{
-      display: flex;
-      align-items: center;
-      margin-bottom: 6px;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.25;
-            @media screen and (min-width: $tablet) {
-                  margin-bottom: 8px;
-                  font-size: 32px;
-                  line-height: 1.22;
-                  }
-             @media screen and (min-width:$desktop) {
-                  margin-bottom: 4px;
-                              font-size: 36px;
-                  }
-                        
-}
-.store__title::after {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 64px;
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+      font-size: 32px;
+      line-height: 1.22;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 4px;
+      font-size: 36px;
+    }
+    &::after {
       display: none;
+
       @media screen and(min-width: $tablet) {
-            content: '';
-                  flex-grow: 1;
-                  display: flex;
-                  align-items: center;
-                  flex-direction: row;
-                  border: 1px solid $black-text-color;
-                  height: 0;
-                  margin-left: 8px;
-      }
-      @media screen and (min-width:$desktop){
-                  margin-left: 16px;
+        content: '';
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border: 1px solid $black-text-color;
+        height: 0;
+        margin-left: 8px;
       }
 
-}
-.store__img{
-      width: 100%;
-      margin-bottom: 12px;
-      @media screen and (min-width: $tablet) {
-                  margin-bottom: 16px;
-            }
-}
-.store__text{
-      margin-bottom: 0;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 1.25;
-            opacity: 0.6;
-            @media screen and (min-width: $tablet) {
-                  font-size: 24px;
-                  line-height: 1.2;
-            }
-            @media screen and (min-width: $desktop) {
-                  font-size: 28px;
-                  line-height: 1.21;
-            }
+      @media screen and (min-width: $desktop) {
+        margin-left: 16px;
       }
+    }
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 12px;
 
-.store__button{
-           display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 14px 28px;
-            margin-right: auto;
-            margin-left: auto;
-            gap: 10px;
-            background: $default-color-btn;
-            border-radius: 38px;
-            border: transparent;
-            color: $white-text-color;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 1.2;
-            width: 208px;
-            height: 44px;
-            @media screen and (min-width: $tablet){
-                  width: 280px;
-                  height: 64px;
-                  font-size: 28px;
-                  line-height: 0.86;
-            }
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    opacity: 0.6;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 28px;
+      line-height: 1.21;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 10px;
+    background: $default-color-btn;
+    border-radius: 38px;
+    border: transparent;
+    color: $white-text-color;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    width: 208px;
+    height: 44px;
+
+    @media screen and (min-width: $tablet) {
+      width: 280px;
+      height: 64px;
+      font-size: 28px;
+      line-height: 0.86;
+    }
+  }
 }
