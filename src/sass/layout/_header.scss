@@ -214,7 +214,14 @@
     
     
   
-   
+    .header__mobile-nav.is-open {
+      opacity: 1;
+      visibility:visible;
+    }
+
+    .header__mobile-nav.is-open .button-icon__cross{
+      display: block;
+    }
 
   
   

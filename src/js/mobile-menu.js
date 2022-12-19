@@ -16,4 +16,3 @@
       mobileBodyRef.classList.toggle("is-fixed");
     });
   })();
-
