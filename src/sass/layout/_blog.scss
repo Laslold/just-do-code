@@ -1,3 +1,4 @@
+
 .blog-container__title {
       margin-bottom: 32px;
       text-transform: uppercase;
@@ -12,9 +13,12 @@
 }
 .slider{
       min-width: 0;
+      max-width: 100%;
       display: flex;
+      align-items: center;
       margin-bottom: 28px;
       gap: 8px;
+      position: relative;
       @media screen and (min-width: $tablet) {
             margin-bottom: 32px;
             gap: 32px;
@@ -71,3 +75,6 @@
                    line-height: 0.86;
              }
 }
+
+
+            
