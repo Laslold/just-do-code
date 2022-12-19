@@ -117,6 +117,7 @@
     line-height: 1.2;
     width: 208px;
     height: 44px;
+    transition: $time-cube;
     &:hover {
             background-color: $hover-color-btn;
       }
