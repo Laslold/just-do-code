@@ -117,6 +117,12 @@
     line-height: 1.2;
     width: 208px;
     height: 44px;
+    &:hover {
+            background-color: $hover-color-btn;
+      }
+      &:focus {
+            background-color: $focus-color-btn;
+      }
 
     @media screen and (min-width: $tablet) {
       width: 280px;
