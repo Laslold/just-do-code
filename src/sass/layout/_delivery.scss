@@ -1,127 +1,124 @@
-body {
-  counter-reset: heading;
-  /* Инициируем счетчик */
-}
 .delivery {
   &__title {
-    @extend .title;
-    text-transform: uppercase;
-    padding-bottom: 32px;
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 60px;
+      @extend .title;
+      text-transform: uppercase;
+      padding-bottom: 32px;
+  
+      @media screen and (min-width: $tablet) {
+        padding-bottom: 60px;
+      }
+  
+      @media screen and (min-width: $desktop) {
+        padding-bottom: 80px;
+      }
     }
-    @media screen and (min-width: $desktop) {
-      padding-bottom: 80px;
-    }
-  }
-
-  &__list {
-    display: flex;
+  &__list{
+  counter-reset: counter-article;
+  list-style-type: none;
+  display: flex;
     width: 100%;
     flex-direction: column;
     gap: 14px;
     padding-bottom: 26px;
+  
     @media screen and (min-width: $tablet) {
       padding-bottom: 40px;
       gap: 20px;
     }
+  
     @media screen and (min-width: $desktop) {
       padding-bottom: 60px;
       gap: 32px;
     }
   }
 
-  &__item {
-    width: 100%;
+&__item {
+  position: relative;
+  padding: 4px 0 3px 100px;
+  margin-bottom: 20px;
+align-items: center;
+  width: 100%;
     display: flex;
-    width: 288px;
-    align-items: center;
-    @media screen and (min-width: $tablet) {
-      width: 667px;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 1088px;
-      margin: 0 72px;
-    }
-    &:before {
-      counter-increment: heading;
-      /* Указываем идентификатор счетчика */
-      content: ' ' counter(heading) ' ';
-      /* Выводим текст перед содержимым тега <p> */
-      position: relative;
-      width: 40px;
-      height: 40px;
-      padding: 5px 5px;
-      border: 1px solid #000000;
-      border-radius: 50%;
-      @media screen and (min-width: $tablet) {
-        width: 64px;
-        height: 64px;
-      }
-    }
-    &:content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  // &__ellipse {
-  //   position: relative;
-  //   width: 100%;
-  //   width: 40px;
-  //   height: 40px;
-  //   padding: 5px 5px;
-  //   color: white;
-  //   border: 1px solid #000000;
-  //   border-radius: 50%;
-  //   @media screen and (min-width: $tablet) {
-  //     width: 64px;
-  //     height: 64px;
-
-  //     }
-  //   }
-
-  // &__accent {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-
-  // }
-
-  &__text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-
-    color: $black-text-color;
-    width: 232px;
-    margin: 0 8px;
-
-    @media screen and (min-width: $tablet) {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: calc(29 / 24);
-      color: $black-text-color;
-      width: 583px;
-      margin-left: 20px;
-      margin-right: auto;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-left: 56px;
-      margin-right: 0;
-    }
-  }
-  &__img {
-    width: 100%;
-    // width: 320px;
+    // width: 288px;
+    // align-items: center;
+  
     // @media screen and (min-width: $tablet) {
-    //   width: 768px;
+    //   width: 667px;
     // }
+  
     // @media screen and (min-width: $desktop) {
-    //   width: 1280px;
+    //   width: 1088px;
+    //   margin: 0 72px;
     // }
+}
+
+&__item:last-child {
+  margin-bottom: 0;
+}
+
+&__item:before {
+  content: counter(counter-article);
+  counter-increment: counter-article;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  text-align: center;
+
+  
+  
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 2;
+  box-sizing: border-box;
+  @media screen and (min-width: $tablet) {
+    font-weight: 500;
+      font-size: 26px;
+      line-height: 2.6;
+          width: 64px;
+          height: 64px;
+  
+          }
+}
+&__text {
+font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $black-text-color;
+  width: 232px;
+  // margin: 0 8px;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    color: $black-text-color;
+    // width: 593px;
+    // margin-left: 20px;
+    // margin-right: auto;
   }
+
+  @media screen and (min-width: $desktop) {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: calc(39/32);
+    // width: 855px;
+    // margin-left: 56px;
+    // margin-right: 0;
+  }
+}
+&__img {
+  width: 100%;
+  // width: 320px;
+  // @media screen and (min-width: $tablet) {
+  //   width: 768px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   width: 1280px;
+  // }
+}
 }
