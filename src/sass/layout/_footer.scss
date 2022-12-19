@@ -1,0 +1,133 @@
+.footer {
+  background-color: $black-text-color;
+  color: $white-text-color;
+  font-family: Inter, sans-serif;
+  fill: $white-text-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    @media screen and (min-width: $tablet) {
+      flex-wrap: nowrap;
+      gap: 44px;
+      justify-content: flex-start;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-wrap: nowrap;
+      gap: 96px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__logo {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+      margin-right: 114px;
+    }
+  }
+
+  &__logo-icon {
+    height: 57px;
+    width: 73px;
+    fill: $white-text-color;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 18px;
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    @media screen and (min-width: $desktop) {
+      line-height: 1.21;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.19;
+    }
+  }
+
+  &__navigation {
+    width: calc((100% - 32px) / 2);
+    @media screen and (min-width: $tablet) {
+      max-width: 144px;
+      width: 100%;
+    }
+  }
+
+  &__opening {
+    width: calc((100% - 32px) / 2);
+    @media screen and (min-width: $tablet) {
+      max-width: 144px;
+      width: 100%;
+    }
+  }
+  &__contacts {
+    width: calc((100% - 32px) / 2);
+    @media screen and (min-width: $tablet) {
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+
+  &__social {
+    width: calc((100% - 32px) / 2);
+    @media screen and (min-width: $tablet) {
+      max-width: 45px;
+      width: 100%;
+      margin-left: auto;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 53px;
+      width: 100%;
+      margin-left: auto;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 14px;
+    @media screen and (min-width: $tablet) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  &__social-icon {
+    width: 28px;
+    height: 28px;
+    fill: $white-text-color;
+    @media screen and (min-width: $tablet) {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}
