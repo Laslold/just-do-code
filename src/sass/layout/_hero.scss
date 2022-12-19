@@ -1,0 +1,71 @@
+.hero{
+    position: relative;
+    padding: 44px 0 100px;
+    margin: 0;
+}
+
+.hero__describe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__text{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    width: 64px;
+
+    color: $black-text-color;
+    margin-left: 11px;
+    @media screen and (min-width: $tablet){
+        font-size: 24px;
+        margin-left: 49px;
+        width: 76px;
+
+    }
+    @media screen and (min-width: $desktop){
+        font-size: 32px;
+        margin-left: 210px;
+        width: 101px;
+    }
+}
+
+
+.hero__btn{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hero__btn-img{
+    @media screen and (min-width: $tablet){
+        width: 145px;
+        height: 150px;
+    }
+    @media screen and (min-width: $desktop){
+        width: 166px;
+        height: 166px;
+        margin-right: 145px
+    }
+}
+
+
+.hero__title{
+    font-family: inherit;
+    font-style: normal;
+    font-size: 52px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 400;
+    color: $black-text-color;
+    margin-top: -27px;
+    @media screen and (min-width: $tablet){
+        font-size: 120px;
+        margin-top: -59px;
+    }
+    @media screen and (min-width: $desktop){
+        font-size: 160px;
+        margin-top: -105px;
+    }
+
+}
