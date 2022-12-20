@@ -336,7 +336,8 @@
 
   &__plea {
     padding: 0;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+    margin-top: 16px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -345,7 +346,6 @@
       font-weight: 600;
       font-size: 32px;
       line-height: 1.21;
-      margin-bottom: 24px;
     }
   }
   &__text {
@@ -360,7 +360,7 @@
       font-weight: 500;
       font-size: 16px;
       width: 416px;
-      margin-bottom: 32px;
+      margin-bottom: 34px;
     }
   }
 
@@ -427,7 +427,7 @@
     }
   }
   &__thumb {
-    width: 100vw;
+    // width: 100vw;
     @media screen and (min-width: $tablet) {
       width: 367px;
     }
@@ -478,9 +478,11 @@
 // ------------------------------------
 .contact {
   display: block;
+  display: flex;
+  flex-direction: column;
 }
 .aside {
-  display: block;
+  display: none;
 
   &__align {
     display: flex;
