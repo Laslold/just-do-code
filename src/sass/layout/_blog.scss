@@ -1,0 +1,80 @@
+
+.blog-container__title {
+      margin-bottom: 32px;
+      text-transform: uppercase;
+
+      @media screen and (min-width: $tablet) {
+            margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: $desktop) {
+            margin-bottom: 122px;
+      }
+}
+.slider{
+      min-width: 0;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 28px;
+      gap: 8px;
+      position: relative;
+      @media screen and (min-width: $tablet) {
+            margin-bottom: 32px;
+            gap: 32px;
+            }
+      @media screen and (min-width: $desktop) {
+            margin-bottom: 44px;
+      }
+}
+.blog__text{
+      color: $black-text-color;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      text-align: center;
+      margin-bottom: 32px;
+      @media screen and (min-width: $tablet) {
+                  font-size: 32px;
+                  line-height: 1.22;
+                  margin-bottom: 40px;
+            }
+      @media screen and (min-width: $desktop) {
+            margin-bottom: 43px;
+      }
+}
+.blog__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 28px;
+      margin-right: auto;
+      margin-left: auto;
+      background: $default-color-btn;
+      border-radius: 38px;
+      border: transparent;
+      color: $white-text-color;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.3;
+      width: 170px;
+      height: 40px;
+      transition: $time-cube;
+
+      &:hover {
+            background-color: $hover-color-btn;
+      }
+
+      &:focus {
+            background-color: $focus-color-btn;
+      }
+             @media screen and (min-width: $tablet) {
+                   width: 280px;
+                   height: 64px;
+                   font-size: 28px;
+                   line-height: 0.86;
+             }
+}
+
+
+            
