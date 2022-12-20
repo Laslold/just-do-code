@@ -46,14 +46,12 @@
       }
       @media screen and (min-width: $desktop) {
             width: 96px;
-            
       }
 }
 
 .slider .slick-arrow.slick-prev {
       left: 20px;
       background: url(../images/arrow-right.svg) 0 0 / 100% no-repeat;
-      fill: $black-text-color;
 
       &:before {
             display: none;
@@ -65,8 +63,6 @@
 .slider .slick-arrow.slick-next {
       right: 20px;
       background: url(../images/arrow-left.svg) 0 0 / 100% no-repeat;
-      fill: $black-text-color;
-
       &:before {
             display: none;
       }
