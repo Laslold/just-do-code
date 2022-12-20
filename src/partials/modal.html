@@ -1,65 +1,3 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal" id="modal-1">
-    <button data-modal-close class="modal__btn">
-      <svg class="modal__icon">
-        <use href="./images/sprite.svg#icon-cross"></use>
-      </svg>
-    </button>
-    <div class="modal__wrapper">
-      <picture>
-        <source
-          srcset="
-            ./images/modal/desktop/desktop-christie@1x.jpeg 1x,
-            ./images/modal/desktop/desktop-christie@2x.jpeg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/modal/tablet/tablet-christie@1x.jpeg 1x,
-            ./images/modal/tablet/tablet-christie@2x.jpeg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/modal/mobil/mobile-christie@1x.jpeg 1x,
-            ./images/modal/mobil/mobile-christie@2x.jpeg 2x
-          "
-        />
-
-        <img
-          class="modal__thumb"
-          src="./images/modal/mobil/mobile-christie@1x.jpeg"
-          alt="bouquet of flowers"
-          width="272" loading="lazy"
-        />
-      </picture>
-
-      <div class="modal__content">
-        <strong class="modal__plea">Follow to our newsletter</strong>
-        <p class="modal__text">
-          Be the first to get exclusive offers and the latest news on our
-          product directly in your box.
-        </p>
-        <div class="modal__inner">
-          <form class="modal__fild" action="URL">
-            <label class="modal_mail" for="mail">Email</label>
-            <input
-              class="modal__input"
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder="Your email"
-            />
-          </form>
-          <button class="modal__form-btn" type="button">Subscribe</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="backdrop is-hidden" js-data-modal>
   <div class="modalhero" id="modal-2">
@@ -132,5 +70,67 @@
         </div>
       </form>
     <!-- </div> -->
+  </div>
+</div>
+<!-- ***************************************************************************** -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal" id="modal-1">
+    <button data-modal-close class="modal__btn">
+      <svg class="modal__icon">
+        <use href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="modal__wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/modal/desktop/desktop-christie@1x.jpeg 1x,
+            ./images/modal/desktop/desktop-christie@2x.jpeg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/modal/tablet/tablet-christie@1x.jpeg 1x,
+            ./images/modal/tablet/tablet-christie@2x.jpeg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/modal/mobil/mobile-christie@1x.jpeg 1x,
+            ./images/modal/mobil/mobile-christie@2x.jpeg 2x
+          "
+        />
+
+        <img
+          class="modal__thumb"
+          src="./images/modal/mobil/mobile-christie@1x.jpeg"
+          alt="bouquet of flowers"
+          width="272" loading="lazy"
+        />
+      </picture>
+
+      <div class="modal__content">
+        <strong class="modal__plea">Follow to our newsletter</strong>
+        <p class="modal__text">
+          Be the first to get exclusive offers and the latest news on our
+          product directly in your box.
+        </p>
+        <div class="modal__inner">
+          <form class="modal__fild" action="URL">
+            <label class="modal_mail" for="mail">Email</label>
+            <input
+              class="modal__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Your email"
+            />
+          </form>
+          <button class="modal__form-btn" type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
