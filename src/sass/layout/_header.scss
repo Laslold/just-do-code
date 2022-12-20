@@ -1,0 +1,168 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.header {
+  position: relative;
+  padding: 16px 0 0;
+  @media screen and (min-width: $tablet){
+    padding: 24px 0 38px;
+  }
+  @media screen and (min-width: $desktop){
+    padding: 28px 0 44px;
+  }
+  
+  }
+  
+  .header__address {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+    
+  }
+  
+  .header__nav {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+      display: flex;
+      align-items: center;
+    }
+    
+    
+  
+  }
+
+  .header__mobile-nav{
+    position: fixed;
+    top: 0;
+    left:0;
+    
+    background-color: $default-color-btn;
+    width: 100%;
+    height: 100vh;
+    padding:124px 0px 180px;
+    text-align: center;
+    opacity: 0;
+    visibility:hidden;
+    z-index: 10;
+    pointer-events: none;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+ 
+
+  .header__mobile-nav-lists{
+    display: flex;
+    flex-direction: column;
+    gap:26px;
+  }
+    
+  .header__mobile-nav-item{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $white-text-color;
+
+  }
+
+
+  
+  .header__nav-lists {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .header__logo-img{
+    @media screen and (min-width: $tablet){
+    width: 75px;
+    height: 57px;
+  }
+}
+ 
+  .header__nav-link {
+    @media screen and (min-width: $tablet){
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.2;
+    
+      color: $black-text-color;
+      &:hover,&:focus{
+        color: $hover-color-btn;
+      }
+    }
+  }
+
+  .header__phone-img{
+    @media screen and (min-width:$tablet) {
+      width: 24px;
+      height: 24px;
+    }
+    @media screen and (min-width:$desktop) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+    
+    .header-container{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .header-button__open{
+      border: none;
+      background-color: transparent;
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
+      @media screen and (min-width: $desktop) {
+        display: none;
+      }
+    }
+
+    
+    
+  
+.header__mobile-nav.is-open {
+  opacity: 1;
+  visibility:visible;
+  pointer-events: auto;
+}
+
+.header__mobile-close{
+  position: absolute;
+  top: 16px;
+  right:16px;
+  border:none;
+  background-color:transparent;
+}
+
+.header__mobile-close-img{
+  
+  fill:#fff;
+}
+  
+  
+  
+  
+  ////////////////// Header__modal
+  
+  
+  
+  
